@@ -48,7 +48,7 @@ git clone https://github.com/Hager-elhwarii/Weather-App.git
 -  [GitHub](https://github.com/Hager-elhwarii)
 
 ## 📘 License
-This project is **totally free**,  and does not contain any license.
+This project is **Totally Free**,  and does not contain any license.
 
 
 
