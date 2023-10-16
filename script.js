@@ -8,24 +8,23 @@ async function getWeather(countryName) {
   const response = await fetch(
     `${apiUrl}q=${countryName}&appid=${apiKey}&units=metric`
   );
-  console.log(response)
-
   const data = await response.json();
-  console.log(data);
 
+  // If user enter invalid country-name, it will display invalid-name message.
   if (response.status == 404) {
-    console.log('in invaild')
     document.querySelector(".invalid-name").style.display = "block";
     document.querySelector(".input-empty").style.display = "none";
     document.querySelector(".weather-info").style.display = "none";
     
   }
+  // If user clicked on search-btn without putting a value in input-field, it will display empty-input message.
    else if (countryName == "") {
-    console.log('in empty')
     document.querySelector(".input-empty").style.display = "block"; 
     document.querySelector(".weather-info").style.display = "none";
     document.querySelector(".invalid-name").style.display = "none";
-  } 
+  }
+
+// If user enter a valid country name, it will display it's weather info.
   else {
     document.querySelector(".invalid-name").style.display = "none";
     document.querySelector(".input-empty").style.display = "none";
@@ -52,4 +51,5 @@ async function getWeather(countryName) {
   }
 }
 
+// Adding event listener, So when user clicks on the search-icon, it will call getWeather() and excute it.
 searchBtn.addEventListener("click", () => getWeather(inputField.value));
