@@ -1,7 +1,6 @@
 /*====================
      GENERAL STYLING 
   ====================*/
-
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +24,6 @@ body {
 
 /*===================
   ===================*/
-
 .container {
   height: 100%;
   overflow: hidden;
@@ -47,6 +45,10 @@ body {
   align-items: center;
   gap: 1.6rem;
 }
+
+/*======================
+    INPUT FIELD STYLING
+  ======================*/
 .search-block > input {
   width: 100%;
   border: none;
@@ -59,6 +61,10 @@ body {
   height: 6rem;
   flex: 1;
 }
+
+/*======================
+    SEARCH ICON STYLING
+  ======================*/
 .search-block > button {
   border: none;
   outline: none;
@@ -73,6 +79,9 @@ body {
   width: 1.8rem;
 }
 
+/*========================
+    WEATHER INFO STYLING
+  ========================*/
 .weather-info .weather-icon {
  width: 14.4rem;
  margin-top: 3rem;
@@ -110,6 +119,10 @@ body {
   text-transform: capitalize;
   font-size: 1.5rem;
 }
+
+/*==========================
+    ERROR MESSAGES STYLING
+  ==========================*/
 .input-empty , .invalid-name{
   display: none;
   text-align: start;
@@ -119,4 +132,81 @@ body {
 }
 .input-empty::first-letter ,.invalid-name::first-letter {
   text-transform: capitalize;
+}
+
+
+/*=========================
+   RESPONSIVENESS STYLING
+  =========================*/
+@media (max-width: 500px){
+  .card-wrapper{
+    max-width: 420px;
+  }
+  .weather-info > :first-child h1 {
+    font-size: 7rem;
+  }
+  .weather-info > :first-child h2 {
+    font-size: 4.2rem;
+  }
+  .weather-info .weather-icon {
+    width: 14rem;
+   }
+   .humidity , .wind {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 430px){
+  .card-wrapper{
+    max-width: 380px;
+  }
+  .weather-info > :first-child h1 {
+    font-size: 6rem;
+  }
+  .weather-info > :first-child h2 {
+    font-size: 4rem;
+  }
+  .weather-info .weather-icon {
+    width: 13rem;
+   }
+   .humidity , .wind {
+    font-size: 2.2rem;
+  }
+  .weather-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+}
+@media (max-width: 400px){
+  .card-wrapper{
+    max-width: 350px;
+  }
+  .weather-info > :first-child h1 {
+    font-size: 5rem;
+  }
+  .weather-info > :first-child h2 {
+    font-size: 3.7rem;
+  }
+  .weather-info .weather-icon {
+    width: 12rem;
+   }
+   .humidity , .wind {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 360px){
+  .card-wrapper{
+    max-width: 320px;
+  }
+  .weather-info > :first-child h1 {
+    font-size: 4rem;
+  }
+  .weather-info > :first-child h2 {
+    font-size: 3.4rem;
+  
+}
+.weather-info .weather-icon {
+  width: 11rem;
+ }
+
 }
