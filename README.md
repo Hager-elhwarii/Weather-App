@@ -3,8 +3,8 @@
 - Create `Fully Responsive` Simple Weather App In HTML, CSS,  and `JavaScript`.
 - In this weather App, User can enter the `country name` and get the `weather information` of a particular country.
 
-## :camera_flash: Demo GIF
-![Weather App](https://github.com/Hager-elhwarii/Weather-App/assets/80959882/f9e86537-7e00-441d-ad07-6427e32645cd)
+## :camera_flash: Demo Screenshoot
+![image](https://github.com/Hager-elhwarii/Weather-App/assets/80959882/e791ab8a-3d00-468c-a423-d02561804e07)
 
 ## 🚀 Deployment
  - [Weather App](https://weather-app-dottie.netlify.app/)
