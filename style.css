@@ -2,20 +2,121 @@
      GENERAL STYLING 
   ====================*/
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  :root {
-    font-size: 62.5%;
-    /* Color Variables */
-  }
-  
-  body {
-    height: 100vh;
-  }
-  
-  /*===================
-    ===================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  /* Color Variables */
+  --primary-white : #fff;
+  --primary-black: #1a1917;
+  --primary-light-gray: #ebfffc;
+  --primary-dark-gray: #555;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-black);
+}
+
+/*===================
+  ===================*/
+
+.container {
+  height: 100%;
+  overflow: hidden;
+}
+.card-wrapper {
+  text-align: center;
+  width: 100%;
+  max-width: 480px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: var(--primary-white);
+  border-radius: 2rem;
+  margin: 8rem auto 0;
+  padding: 4rem 3.4rem;
+}
+.search-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.6rem;
+}
+.search-block > input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: var(--primary-dark-gray);
+  background: var(--primary-light-gray);
+  border-radius: 3rem;
+  padding: 1rem 2.4rem;
+  font-size: 1.7rem;
+  height: 6rem;
+  flex: 1;
+}
+.search-block > button {
+  border: none;
+  outline: none;
+  background: var(--primary-light-gray);
+  font-size: 1rem;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  cursor: pointer;
+}
+.search-block > button > img {
+  width: 1.8rem;
+}
+
+.weather-info .weather-icon {
+ width: 14.4rem;
+ margin-top: 3rem;
+}
+.weather-info > :first-child h1 {
+  font-size: 8rem;
+  font-weight: 500;
+}
+.weather-info > :first-child h2 {
+  font-size: 4.4rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin-top: -1.4rem;
+}
+.weather-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+  padding: 0 2rem;
+}
+.weather-details .col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 1rem;
+}
+.weather-details .col > img {
+  width: 4rem;
+}
+.humidity , .wind {
+  font-size: 2.6rem;
+}
+.weather-details .col img + div p:last-child {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+.input-empty , .invalid-name{
+  display: none;
+  text-align: start;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.input-empty::first-letter ,.invalid-name::first-letter {
+  text-transform: capitalize;
+}

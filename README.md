@@ -1,4 +1,4 @@
-# Weather-App 💡
+# Weather App 💡
 - Create Weather App In HTML CSS and JavaScript.
 
 ## :camera_flash: Demo Screenshoot
